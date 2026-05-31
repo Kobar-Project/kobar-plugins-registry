@@ -1,0 +1,45 @@
+[
+  {
+    "id": "kobar-emoji-picker",
+    "name": "Emoji Picker",
+    "version": "1.0.10",
+    "description": "Quickly search, colorize and copy emojis.",
+    "author": "KoBar Team",
+    "image": "https://i.ibb.co/qMBTZYFs/st-small-507x507-pad-600x600-f8f8f8.jpg",
+    "categories": [
+        "Tools",
+        "Utility"
+    ],
+    "versionNote": "Bug Fixes - 5",
+    "githubRepo": "eedali/testplugin",
+    "languages": [
+        "en",
+        "tr",
+        "de",
+        "ar",
+        "zh",
+        "fr",
+        "hi",
+        "es",
+        "ja",
+        "ru"
+    ]
+  },
+  {
+    "id": "test-plugin",
+    "name": "Test Plugin",
+    "version": "1.1.0",
+    "description": "Test plugin forKoBar",
+    "author": "zappa",
+    "image": "https://url.to/resim.png",
+    "categories": [
+      "Tools"
+    ],
+    "versionNote": "First commit",
+    "githubRepo": "dev/repo",
+    "languages": [
+      "en",
+      "fr"
+    ]
+  }
+]
