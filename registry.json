@@ -34,8 +34,8 @@
   {
     "id": "com.kobar.testshortcuts",
     "name": "Test Shortcuts",
-    "author": "Antigravity",
-    "version": "1.0.0",
+    "author": "eedali",
+    "version": "1.0.1",
     "description": "Standalone shortcuts manager plugin",
     "entry": "index.js",
     "icon": "apps",
@@ -46,6 +46,6 @@
       "en"
     ],
     "githubRepo": "eedali/testShortcuts",
-    "versionNote": "1.0.0"
+    "versionNote": "1.0.1"
   }
 ]
