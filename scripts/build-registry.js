@@ -1,32 +1,32 @@
 const fs = require('fs');
 
 async function main() {
-    // Kaynak listeyi oku
+    // Read the source repository list
     const repos = JSON.parse(fs.readFileSync('plugins.json', 'utf8'));
     const registry = [];
 
     for (const repo of repos) {
-        console.log(`⏳ İşleniyor: ${repo}...`);
+        console.log(`⏳ Processing: ${repo}...`);
         try {
-            // Eklentinin metadata (kobar.json) dosyasını çek
-            // Not: Geliştiricilerin repolarının ana dizininde kobar.json olmalıdır
+            // Fetch the plugin's metadata (kobar.json)
+            // Note: Developers should have kobar.json in the root of their repos
             let manifestRes = await fetch(`https://raw.githubusercontent.com/${repo}/HEAD/kobar.json`);
             
             let manifest = {};
             if (manifestRes.ok) {
                 manifest = await manifestRes.json();
             } else {
-                // Eğer kobar.json yoksa manifest.json deniyoruz (Geriye dönük uyumluluk)
+                // If kobar.json is missing, try manifest.json (Backward compatibility)
                 manifestRes = await fetch(`https://raw.githubusercontent.com/${repo}/HEAD/manifest.json`);
                 if (manifestRes.ok) {
                     manifest = await manifestRes.json();
                 } else {
-                    console.error(`❌ HATA: ${repo} reposunda kobar.json bulunamadı! Atlanıyor...`);
+                    console.error(`❌ ERROR: Metadata file not found in ${repo}! Skipping...`);
                     continue;
                 }
             }
 
-            // GitHub API'den Latest Release (Son Sürüm) bilgisini çek
+            // Fetch the Latest Release from GitHub API
             const releaseRes = await fetch(`https://api.github.com/repos/${repo}/releases/latest`, {
                 headers: {
                     'User-Agent': 'KoBar-Registry-Bot',
@@ -34,40 +34,53 @@ async function main() {
                 }
             });
 
-            let version = "0.0.0";
-            let versionNote = "";
+            let releaseVersion = "0.0.0";
+            let releaseNote = "";
 
             if (releaseRes.ok) {
                 const release = await releaseRes.json();
-                version = release.tag_name || release.name;
-                if (version.startsWith('v')) version = version.substring(1); // "v1.0.0" -> "1.0.0"
-                versionNote = release.name || "Son sürüm";
+                releaseVersion = release.tag_name || release.name;
+                if (releaseVersion.startsWith('v')) releaseVersion = releaseVersion.substring(1); // "v1.0.0" -> "1.0.0"
+                releaseNote = release.name || "Latest release";
             } else {
-                console.warn(`⚠️ UYARI: ${repo} için GitHub Release bulunamadı.`);
+                console.warn(`⚠️ WARNING: GitHub Release not found for ${repo}.`);
             }
 
-            // Nihai JSON objesini oluştur ve listeye ekle
-            registry.push({
-                id: manifest.id || repo.replace('/', '-').toLowerCase(),
-                name: manifest.name || repo.split('/')[1],
-                version: version,
-                description: manifest.description || "",
-                author: manifest.author || repo.split('/')[0],
-                image: manifest.image || "",
-                categories: manifest.categories || [],
-                versionNote: versionNote,
-                githubRepo: repo,
-                languages: manifest.languages || ["en"]
-            });
+            // Create the final JSON object
+            const pluginData = {
+                // Default fallback values
+                id: repo.replace('/', '-').toLowerCase(),
+                name: repo.split('/')[1],
+                author: repo.split('/')[0],
+                
+                // Spread all data from manifest to include custom fields like storeImage, isBeta, etc.
+                ...manifest, 
+                
+                // Ensure githubRepo is explicitly set based on the current loop
+                githubRepo: repo, 
+            };
+
+            // Override version with GitHub release tag if available
+            if (releaseVersion !== "0.0.0") {
+                pluginData.version = releaseVersion;
+            }
+
+            // Only use GitHub release note if manifest doesn't have a specific versionNote
+            if (!manifest.versionNote && releaseNote) {
+                pluginData.versionNote = releaseNote;
+            }
+
+            // Add to registry list
+            registry.push(pluginData);
 
         } catch (error) {
-            console.error(`❌ HATA: ${repo} işlenirken hata oluştu:`, error.message);
+            console.error(`❌ ERROR: Failed to process ${repo}:`, error.message);
         }
     }
 
-    // Uygulamanın okuyacağı registry.json dosyasını diske yaz
+    // Write the generated registry.json to disk
     fs.writeFileSync('registry.json', JSON.stringify(registry, null, 2));
-    console.log('✅ BAŞARILI: registry.json başarıyla oluşturuldu!');
+    console.log('✅ SUCCESS: registry.json has been generated successfully!');
 }
 
 main();
