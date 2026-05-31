@@ -2,15 +2,21 @@
   {
     "id": "kobar-emoji-picker",
     "name": "Emoji Picker",
+    "author": "KoBar Team",
     "version": "1.0.12",
     "description": "Quickly search, colorize and copy emojis.",
-    "author": "KoBar Team",
     "image": "https://i.ibb.co/qMBTZYFs/st-small-507x507-pad-600x600-f8f8f8.jpg",
+    "isBeta": true,
+    "storeImage": [
+      "https://i.ibb.co/qMBTZYFs/st-small-507x507-pad-600x600-f8f8f8.jpg",
+      "https://picsum.photos/600/400?1",
+      "https://picsum.photos/600/400?2"
+    ],
     "categories": [
       "Tools",
       "Utility"
     ],
-    "versionNote": "1.0.12",
+    "versionNote": "Bug Fixes - 5",
     "githubRepo": "eedali/testplugin",
     "languages": [
       "en",
