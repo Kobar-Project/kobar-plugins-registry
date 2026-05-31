@@ -1,44 +1,44 @@
 name: Update Plugin Registry
 
 on:
-  # plugins.json dosyasına biri yeni repo eklediğinde çalışır
+  # Triggers when someone adds a new repo to plugins.json
   push:
     branches: [ "main" ]
     paths:
       - 'plugins.json'
-  # Veya her gece saat 00:00'da otomatik çalışıp yeni versiyonları kontrol eder
+  # Or runs automatically every night at 00:00 to check for new versions
   schedule:
     - cron: '0 0 * * *'
-  # Actions sekmesinden manuel tetiklemeye izin verir
+  # Allows manual trigger from the Actions tab
   workflow_dispatch: 
 
 jobs:
   build-registry:
     runs-on: ubuntu-latest
     
-    # Repoya yazma izni (Commit atabilmesi için zorunlu)
+    # Write permission required to commit changes
     permissions:
       contents: write
 
     steps:
-      - name: Repoyu Klonla (Checkout)
+      - name: Checkout Repository
         uses: actions/checkout@v4
       
-      - name: Node.js Kurulumu
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           
-      - name: Registry'i Oluştur (Bot Çalışıyor)
+      - name: Build Registry (Bot Running)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/build-registry.js
         
-      - name: Değişiklikleri Commit Et ve Gönder
+      - name: Commit and Push Changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add registry.json
           
-          # Eğer registry.json dosyasında bir değişiklik varsa commit'le
-          git diff --quiet && git diff --staged --quiet || (git commit -m "bot: registry.json otomatik güncellendi" && git push)
+          # Commit if there are changes in registry.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "bot: automated registry.json update" && git push)
