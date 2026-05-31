@@ -2,7 +2,7 @@
   {
     "id": "kobar-emoji-picker",
     "name": "Emoji Picker",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Quickly search, colorize and copy emojis.",
     "author": "KoBar Team",
     "image": "https://i.ibb.co/qMBTZYFs/st-small-507x507-pad-600x600-f8f8f8.jpg",
@@ -10,7 +10,7 @@
       "Tools",
       "Utility"
     ],
-    "versionNote": "1.0.10",
+    "versionNote": "1.0.11",
     "githubRepo": "eedali/testplugin",
     "languages": [
       "en",
