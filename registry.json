@@ -1,23 +1,279 @@
 [
   {
-    "id": "kobar-emoji-picker",
-    "name": "Emoji Picker",
-    "author": "KoBar Team",
-    "version": "1.0.12",
-    "description": "Quickly search, colorize and copy emojis.",
-    "image": "https://i.ibb.co/qMBTZYFs/st-small-507x507-pad-600x600-f8f8f8.jpg",
-    "isBeta": true,
-    "storeImage": [
-      "https://i.ibb.co/qMBTZYFs/st-small-507x507-pad-600x600-f8f8f8.jpg",
-      "https://picsum.photos/600/400?1",
-      "https://picsum.photos/600/400?2"
-    ],
+    "id": "kobar.aihub",
+    "name": "AI Hub",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "A versatile, multi-model AI assistant integrated directly into KoBar. Supports multiple providers (Anthropic, OpenAI, Gemini) and Local LLMs.",
+    "entry": "index.js",
+    "icon": "smart_toy",
     "categories": [
-      "Tools",
+      "Utility",
+      "Productivity",
+      "AI"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/AI-Hub-plugin",
+    "languages": [
+      "en",
+      "tr",
+      "de",
+      "es",
+      "fr",
+      "ru",
+      "ar",
+      "zh",
+      "ja",
+      "hi"
+    ],
+    "versionNote": "Initial Release"
+  },
+  {
+    "id": "kobar.calculator",
+    "name": "Calculator",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "A fully-featured scientific calculator and real-time currency converter plugin.",
+    "entry": "dist/index.js",
+    "icon": "calculate",
+    "categories": [
+      "Utility",
+      "Productivity"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/Calculator-plugin",
+    "languages": [
+      "en",
+      "tr",
+      "de",
+      "es",
+      "fr",
+      "ru",
+      "ar",
+      "zh",
+      "ja",
+      "hi"
+    ],
+    "versionNote": "Initial Plugin Release"
+  },
+  {
+    "id": "kobar.clipboardmanager",
+    "name": "Clipboard Manager",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "Sequential multi-slot clipboard manager for KoBar. Stores your copied items in visual slots and pastes them in order.",
+    "entry": "index.js",
+    "icon": "content_paste",
+    "categories": [
+      "Productivity",
       "Utility"
     ],
-    "versionNote": "Bug Fixes - 5",
-    "githubRepo": "eedali/testplugin",
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/Clipboard-Manager-plugin",
+    "languages": [
+      "en",
+      "tr",
+      "de",
+      "fr",
+      "es",
+      "ja",
+      "ru",
+      "ar",
+      "zh",
+      "hi"
+    ],
+    "versionNote": "Initial plugin release"
+  },
+  {
+    "id": "kobar.colorpicker",
+    "name": "Color Picker",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "Pick colors with HEX/RGB/HSV/HSL values, and generate harmonies.",
+    "entry": "index.js",
+    "icon": "palette",
+    "categories": [
+      "Utility",
+      "Design"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/Color-Picker-plugin",
+    "languages": [
+      "en",
+      "tr",
+      "de",
+      "es",
+      "fr",
+      "ru",
+      "ar",
+      "zh",
+      "ja",
+      "hi"
+    ],
+    "versionNote": "1.0.0"
+  },
+  {
+    "id": "kobar.focusmode",
+    "name": "Focus Mode",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "Pomodoro-style focus timer to boost your productivity. (Plugin Edition)",
+    "entry": "index.js",
+    "icon": "hourglass_empty",
+    "categories": [
+      "Utility",
+      "Productivity"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/Focus-Mode-plugin",
+    "languages": [
+      "de",
+      "ar",
+      "zh",
+      "fr",
+      "hi",
+      "en",
+      "es",
+      "ja",
+      "ru",
+      "tr"
+    ],
+    "versionNote": "Initial Release"
+  },
+  {
+    "id": "kobar.kobox",
+    "name": "KoBox (Dropzone)",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "An accessible, temporary file dropzone right on your sidebar. Drag files to store, click to open.",
+    "entry": "index.js",
+    "icon": "inventory_2",
+    "categories": [
+      "Utility",
+      "Productivity"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/KoBox-plugin",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "versionNote": "Initial plugin release of the KoBox feature"
+  },
+  {
+    "id": "kobar.kocalendar",
+    "name": "KoCalendar",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "An interactive, draggable calendar popup integrated natively into KoBar.",
+    "entry": "index.js",
+    "icon": "calendar_month",
+    "categories": [
+      "Productivity",
+      "Utility"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/KoCalendar-plugin",
+    "languages": [
+      "en",
+      "tr",
+      "de",
+      "es",
+      "fr",
+      "ru",
+      "ar",
+      "zh",
+      "ja",
+      "hi"
+    ],
+    "versionNote": "1.0.0"
+  },
+  {
+    "id": "kobar.koplayer",
+    "name": "koPlayer",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "A lightweight, floating media player to control your music and videos. Enjoy seamless media playback integration while working.",
+    "entry": "index.js",
+    "icon": "music_note",
+    "categories": [
+      "Utility"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/KoPlayer-plugin",
+    "languages": [
+      "en",
+      "tr",
+      "de",
+      "es",
+      "fr",
+      "ru",
+      "ar",
+      "zh",
+      "ja",
+      "hi"
+    ],
+    "versionNote": "1.0.0"
+  },
+  {
+    "id": "kobar.pinwindowtotop",
+    "name": "Pin Window to Top",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "Allows you to pin third-party windows to always stay on top within the KoBar interface.",
+    "entry": "index.js",
+    "icon": "push_pin",
+    "categories": [
+      "Utility"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/PinWindowToTop-plugin",
+    "languages": [
+      "en"
+    ],
+    "versionNote": "Initial Release as Plugin"
+  },
+  {
+    "id": "kobar.screenshot-plugin",
+    "name": "Screenshot Studio",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "Port of the KoBar Screenshot feature. Multi-monitor support, region selection, and rich annotations.",
+    "entry": "dist/index.js",
+    "icon": "camera",
+    "categories": [
+      "Utility",
+      "Productivity"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/Screenshot-plugin",
+    "languages": [
+      "en",
+      "tr",
+      "de",
+      "es",
+      "fr",
+      "ru",
+      "ar",
+      "zh",
+      "ja",
+      "hi"
+    ],
+    "versionNote": "Initial Release as Plugin"
+  },
+  {
+    "id": "kobar.shortcuts",
+    "name": "Shortcuts",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "Standalone shortcuts manager plugin",
+    "entry": "index.js",
+    "icon": "apps",
+    "categories": [
+      "Utility"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/Shortcuts-plugin",
     "languages": [
       "en",
       "tr",
@@ -29,23 +285,56 @@
       "es",
       "ja",
       "ru"
-    ]
+    ],
+    "versionNote": "Initial Release as Plugin"
   },
   {
-    "id": "com.kobar.testshortcuts",
-    "name": "Test Shortcuts",
-    "author": "eedali",
-    "version": "1.0.2",
-    "description": "Standalone shortcuts manager plugin",
+    "id": "kobar.snippetvaultplugin",
+    "name": "Snippet Vault",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "Securely store, categorize, and encrypt your frequently used code blocks and text snippets.",
     "entry": "index.js",
-    "icon": "apps",
+    "icon": "library_books",
     "categories": [
+      "Productivity",
       "Utility"
     ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/SnippetVault-plugin",
     "languages": [
-      "en"
+      "en",
+      "tr",
+      "de",
+      "es",
+      "fr",
+      "ru",
+      "ar",
+      "zh",
+      "ja",
+      "hi"
     ],
-    "githubRepo": "eedali/testShortcuts",
-    "versionNote": "1.0.2"
+    "versionNote": "Initial plugin release for Snippet Vault."
+  },
+  {
+    "id": "kobar.todolistplugin",
+    "name": "To-Do List",
+    "author": "KoBar",
+    "version": "1.0.0",
+    "description": "A minimal, draggable to-do list widget stored sequentially to prioritize your tasks.",
+    "entry": "index.js",
+    "icon": "format_list_bulleted",
+    "categories": [
+      "Productivity",
+      "Utility"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/ToDoList-plugin",
+    "languages": [
+      "en",
+      "tr",
+      "de"
+    ],
+    "versionNote": "Initial Release as Plugin"
   }
 ]
