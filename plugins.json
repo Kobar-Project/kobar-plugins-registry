@@ -1,4 +1,15 @@
 [
-  "eedali/testplugin",
-  "eedali/testShortcuts"
+  "Kobar-Project/AI-Hub-plugin",
+  "Kobar-Project/Calculator-plugin",
+  "Kobar-Project/Clipboard-Manager-plugin",
+  "Kobar-Project/Color-Picker-plugin",
+  "Kobar-Project/Focus-Mode-plugin",
+  "Kobar-Project/KoBox-plugin",
+  "Kobar-Project/KoCalendar-plugin",
+  "Kobar-Project/KoPlayer-plugin",
+  "Kobar-Project/PinWindowToTop-plugin",
+  "Kobar-Project/Screenshot-plugin",
+  "Kobar-Project/Shortcuts-plugin",
+  "Kobar-Project/SnippetVault-plugin",
+  "Kobar-Project/ToDoList-plugin"
 ]
