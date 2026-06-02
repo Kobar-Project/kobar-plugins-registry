@@ -26,7 +26,8 @@
       "ja",
       "hi"
     ],
-    "versionNote": "Initial Release"
+    "versionNote": "Initial Release",
+    "downloads": 0
   },
   {
     "id": "kobar.calculator",
@@ -54,7 +55,8 @@
       "ja",
       "hi"
     ],
-    "versionNote": "Initial Plugin Release"
+    "versionNote": "Initial Plugin Release",
+    "downloads": 0
   },
   {
     "id": "kobar.clipboardmanager",
@@ -82,7 +84,8 @@
       "zh",
       "hi"
     ],
-    "versionNote": "Initial plugin release"
+    "versionNote": "Initial plugin release",
+    "downloads": 0
   },
   {
     "id": "kobar.colorpicker",
@@ -110,6 +113,7 @@
       "ja",
       "hi"
     ],
+    "downloads": 0,
     "versionNote": "1.0.0"
   },
   {
@@ -138,7 +142,8 @@
       "ru",
       "tr"
     ],
-    "versionNote": "Initial Release"
+    "versionNote": "Initial Release",
+    "downloads": 0
   },
   {
     "id": "kobar.kobox",
@@ -158,7 +163,8 @@
       "en",
       "tr"
     ],
-    "versionNote": "Initial plugin release of the KoBox feature"
+    "versionNote": "Initial plugin release of the KoBox feature",
+    "downloads": 0
   },
   {
     "id": "kobar.kocalendar",
@@ -186,6 +192,7 @@
       "ja",
       "hi"
     ],
+    "downloads": 0,
     "versionNote": "1.0.0"
   },
   {
@@ -213,6 +220,7 @@
       "ja",
       "hi"
     ],
+    "downloads": 0,
     "versionNote": "1.0.0"
   },
   {
@@ -231,7 +239,8 @@
     "languages": [
       "en"
     ],
-    "versionNote": "Initial Release as Plugin"
+    "versionNote": "Initial Release as Plugin",
+    "downloads": 0
   },
   {
     "id": "kobar.screenshot-plugin",
@@ -259,7 +268,8 @@
       "ja",
       "hi"
     ],
-    "versionNote": "Initial Release as Plugin"
+    "versionNote": "Initial Release as Plugin",
+    "downloads": 0
   },
   {
     "id": "kobar.shortcuts",
@@ -286,7 +296,8 @@
       "ja",
       "ru"
     ],
-    "versionNote": "Initial Release as Plugin"
+    "versionNote": "Initial Release as Plugin",
+    "downloads": 0
   },
   {
     "id": "kobar.snippetvaultplugin",
@@ -314,7 +325,8 @@
       "ja",
       "hi"
     ],
-    "versionNote": "Initial plugin release for Snippet Vault."
+    "versionNote": "Initial plugin release for Snippet Vault.",
+    "downloads": 0
   },
   {
     "id": "kobar.todolistplugin",
@@ -335,6 +347,7 @@
       "tr",
       "de"
     ],
-    "versionNote": "Initial Release as Plugin"
+    "versionNote": "Initial Release as Plugin",
+    "downloads": 0
   }
 ]
