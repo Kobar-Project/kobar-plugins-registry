@@ -26,8 +26,8 @@ async function main() {
                 }
             }
 
-            // Fetch the Latest Release from GitHub API
-            const releaseRes = await fetch(`https://api.github.com/repos/${repo}/releases/latest`, {
+            // Fetch All Releases from GitHub API
+            const releaseRes = await fetch(`https://api.github.com/repos/${repo}/releases`, {
                 headers: {
                     'User-Agent': 'KoBar-Registry-Bot',
                     ...(process.env.GITHUB_TOKEN ? { 'Authorization': `token ${process.env.GITHUB_TOKEN}` } : {})
@@ -36,14 +36,30 @@ async function main() {
 
             let releaseVersion = "0.0.0";
             let releaseNote = "";
+            let totalDownloads = 0;
 
             if (releaseRes.ok) {
-                const release = await releaseRes.json();
-                releaseVersion = release.tag_name || release.name;
-                if (releaseVersion.startsWith('v')) releaseVersion = releaseVersion.substring(1); // "v1.0.0" -> "1.0.0"
-                releaseNote = release.name || "Latest release";
+                const releases = await releaseRes.json();
+                
+                if (releases && releases.length > 0) {
+                    const latestRelease = releases[0];
+                    releaseVersion = latestRelease.tag_name || latestRelease.name || "0.0.0";
+                    if (releaseVersion.startsWith('v')) releaseVersion = releaseVersion.substring(1); // "v1.0.0" -> "1.0.0"
+                    releaseNote = latestRelease.name || "Latest release";
+                    
+                    // Sum up download counts from all releases and assets
+                    for (const release of releases) {
+                        if (release.assets && release.assets.length > 0) {
+                            for (const asset of release.assets) {
+                                totalDownloads += asset.download_count || 0;
+                            }
+                        }
+                    }
+                } else {
+                    console.warn(`⚠️ WARNING: No GitHub Releases found for ${repo}.`);
+                }
             } else {
-                console.warn(`⚠️ WARNING: GitHub Release not found for ${repo}.`);
+                console.warn(`⚠️ WARNING: Failed to fetch GitHub Releases for ${repo}. Status: ${releaseRes.status}`);
             }
 
             // Create the final JSON object
@@ -58,6 +74,7 @@ async function main() {
                 
                 // Ensure githubRepo is explicitly set based on the current loop
                 githubRepo: repo, 
+                downloads: totalDownloads,
             };
 
             // Override version with GitHub release tag if available
