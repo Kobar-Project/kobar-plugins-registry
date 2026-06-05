@@ -36,10 +36,10 @@
     "downloads": 0
   },
   {
-    "id": "kobar.calculator",
+    "id": "com.kobar.calculator.plugin",
     "name": "Calculator",
     "author": "KoBar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A fully-featured scientific calculator and real-time currency converter plugin.",
     "entry": "dist/index.js",
     "icon": "calculate",
@@ -61,14 +61,20 @@
       "ja",
       "hi"
     ],
-    "versionNote": "Initial Plugin Release",
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Calculator/calculator.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Calculator/Calculator1.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Calculator/Calculator2.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Calculator/Calculator3.png"
+    ],
     "downloads": 0
   },
   {
-    "id": "kobar.clipboardmanager",
+    "id": "com.kobar.clipboardmanager",
     "name": "Clipboard Manager",
     "author": "KoBar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Sequential multi-slot clipboard manager for KoBar. Stores your copied items in visual slots and pastes them in order.",
     "entry": "index.js",
     "icon": "content_paste",
@@ -90,14 +96,20 @@
       "zh",
       "hi"
     ],
-    "versionNote": "Initial plugin release",
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Clipboard%20Manager/clipboardmanager.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Clipboard%20Manager/Clipboard-Manager1.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Clipboard%20Manager/Clipboard-Manager2.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Clipboard%20Manager/Clipboard-Manager3.png"
+    ],
     "downloads": 0
   },
   {
-    "id": "kobar.colorpicker",
+    "id": "kobar-colorpicker-plugin",
     "name": "Color Picker",
     "author": "KoBar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Pick colors with HEX/RGB/HSV/HSL values, and generate harmonies.",
     "entry": "index.js",
     "icon": "palette",
@@ -119,14 +131,20 @@
       "ja",
       "hi"
     ],
-    "downloads": 0,
-    "versionNote": "1.0.0"
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Color%20picker/colorpicker.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Color%20picker/Color-Picker1.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Color%20picker/Color-Picker2.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Color%20picker/Color-Picker3.png"
+    ],
+    "downloads": 0
   },
   {
-    "id": "kobar.focusmode",
+    "id": "focus-mode-plugin",
     "name": "Focus Mode",
     "author": "KoBar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Pomodoro-style focus timer to boost your productivity. (Plugin Edition)",
     "entry": "index.js",
     "icon": "hourglass_empty",
@@ -148,14 +166,20 @@
       "ru",
       "tr"
     ],
-    "versionNote": "Initial Release",
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Focus%20Mode/focusmode.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Focus%20Mode/Focus-Mode1.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Focus%20Mode/Focus-Mode2.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Focus%20Mode/Focus-Mode3.png"
+    ],
     "downloads": 0
   },
   {
-    "id": "kobar.kobox",
+    "id": "com.kobar.kobox",
     "name": "KoBox (Dropzone)",
     "author": "KoBar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "An accessible, temporary file dropzone right on your sidebar. Drag files to store, click to open.",
     "entry": "index.js",
     "icon": "inventory_2",
@@ -169,14 +193,18 @@
       "en",
       "tr"
     ],
-    "versionNote": "Initial plugin release of the KoBox feature",
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoBox/KoBox.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoBox/KoBox1.png"
+    ],
     "downloads": 0
   },
   {
-    "id": "kobar.kocalendar",
+    "id": "ko-calender-plugin",
     "name": "KoCalendar",
     "author": "KoBar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "An interactive, draggable calendar popup integrated natively into KoBar.",
     "entry": "index.js",
     "icon": "calendar_month",
@@ -198,14 +226,20 @@
       "ja",
       "hi"
     ],
-    "downloads": 0,
-    "versionNote": "1.0.0"
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoCalendar/kocalender.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoCalendar/KoCalendar1.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoCalendar/KoCalendar2.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoCalendar/KoCalendar3.png"
+    ],
+    "downloads": 0
   },
   {
-    "id": "kobar.koplayer",
+    "id": "koplayer-plugin",
     "name": "koPlayer",
     "author": "KoBar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A lightweight, floating media player to control your music and videos. Enjoy seamless media playback integration while working.",
     "entry": "index.js",
     "icon": "music_note",
@@ -226,14 +260,20 @@
       "ja",
       "hi"
     ],
-    "downloads": 0,
-    "versionNote": "1.0.0"
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoPlayer/koplayer.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoPlayer/KoPlayer1.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoPlayer/KoPlayer2.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoPlayer/KoPlayer3.png"
+    ],
+    "downloads": 0
   },
   {
-    "id": "kobar.pinwindowtotop",
+    "id": "pin-window-to-top",
     "name": "Pin Window to Top",
     "author": "KoBar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Allows you to pin third-party windows to always stay on top within the KoBar interface.",
     "entry": "index.js",
     "icon": "push_pin",
@@ -245,43 +285,40 @@
     "languages": [
       "en"
     ],
-    "versionNote": "Initial Release as Plugin",
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Pin%20to%20Top/pinwindowtotop.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Pin%20to%20Top/Pin-to-Top1.png"
+    ],
     "downloads": 0
   },
   {
-    "id": "kobar.screenshot-plugin",
+    "id": "screenshot-studio-overlay",
     "name": "Screenshot Studio",
-    "author": "KoBar",
-    "version": "1.0.0",
-    "description": "Port of the KoBar Screenshot feature. Multi-monitor support, region selection, and rich annotations.",
+    "author": "KoBar Team",
+    "version": "1.0.1",
+    "description": "Native multi-monitor screenshot capture, annotation, and cropping tool for KoBar.",
     "entry": "dist/index.js",
-    "icon": "camera",
+    "icon": "screenshot_region",
     "categories": [
-      "Utility",
-      "Productivity"
+      "Productivity",
+      "Utility"
     ],
     "isBeta": false,
-    "githubRepo": "Kobar-Project/Screenshot-plugin",
-    "languages": [
-      "en",
-      "tr",
-      "de",
-      "es",
-      "fr",
-      "ru",
-      "ar",
-      "zh",
-      "ja",
-      "hi"
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/ScreenShot/screenshot.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/ScreenShot/Screenshot1.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/ScreenShot/Screenshot2.png"
     ],
-    "versionNote": "Initial Release as Plugin",
+    "githubRepo": "Kobar-Project/Screenshot-plugin",
     "downloads": 0
   },
   {
     "id": "kobar.shortcuts",
     "name": "Shortcuts",
     "author": "KoBar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Standalone shortcuts manager plugin",
     "entry": "index.js",
     "icon": "apps",
@@ -302,43 +339,19 @@
       "ja",
       "ru"
     ],
-    "versionNote": "Initial Release as Plugin",
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Shortcuts/shortcuts.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Shortcuts/Shortcuts1.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Shortcuts/Shortcuts2.png"
+    ],
     "downloads": 0
   },
   {
-    "id": "kobar.snippetvaultplugin",
-    "name": "Snippet Vault",
-    "author": "KoBar",
-    "version": "1.0.0",
-    "description": "Securely store, categorize, and encrypt your frequently used code blocks and text snippets.",
-    "entry": "index.js",
-    "icon": "library_books",
-    "categories": [
-      "Productivity",
-      "Utility"
-    ],
-    "isBeta": false,
-    "githubRepo": "Kobar-Project/SnippetVault-plugin",
-    "languages": [
-      "en",
-      "tr",
-      "de",
-      "es",
-      "fr",
-      "ru",
-      "ar",
-      "zh",
-      "ja",
-      "hi"
-    ],
-    "versionNote": "Initial plugin release for Snippet Vault.",
-    "downloads": 0
-  },
-  {
-    "id": "kobar.todolistplugin",
+    "id": "todolist-plugin",
     "name": "To-Do List",
     "author": "KoBar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A minimal, draggable to-do list widget stored sequentially to prioritize your tasks.",
     "entry": "index.js",
     "icon": "format_list_bulleted",
@@ -353,7 +366,12 @@
       "tr",
       "de"
     ],
-    "versionNote": "Initial Release as Plugin",
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/To-Do%20List/todolist.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/To-Do%20List/To-Do-List1.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/To-Do%20List/To-Do-List2.png"
+    ],
     "downloads": 0
   }
 ]
