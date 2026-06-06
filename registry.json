@@ -419,5 +419,37 @@
     ],
     "apiVersion": "1.0.0",
     "downloads": 0
+  },
+  {
+    "id": "eedali-emoji-picker",
+    "name": "Emoji Picker",
+    "author": "KoBar Team",
+    "version": "1.0.1",
+    "description": "Quickly search, colorize and copy emojis.",
+    "isBeta": true,
+    "entry": "index.js",
+    "image": "https://raw.githubusercontent.com/eedali/EmojiPicker-plugin/main/store_image.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/eedali/EmojiPicker-plugin/main/screenshot.png"
+    ],
+    "categories": [
+      "Tools",
+      "Utility"
+    ],
+    "versionNote": "Initial commit",
+    "githubRepo": "eedali/EmojiPicker-plugin",
+    "languages": [
+      "en",
+      "tr",
+      "de",
+      "ar",
+      "zh",
+      "fr",
+      "hi",
+      "es",
+      "ja",
+      "ru"
+    ],
+    "downloads": 0
   }
 ]
