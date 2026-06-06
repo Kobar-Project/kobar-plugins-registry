@@ -27,10 +27,32 @@ Ensure your plugin's repository has a `kobar.json` (or `manifest.json`) file in 
   "id": "my-awesome-plugin",
   "name": "Awesome Plugin",
   "description": "This plugin does amazing things for KoBar.",
+  "version": "1.0.0",
+  "versionNote": "Updated plugin images.",
   "author": "YourName",
+  "entry": "index.js",
+  "isBeta": false,
+  "githubRepo": "your-name/your-plugin",
+  "icon": "library_books",
   "image": "https://raw.githubusercontent.com/YourName/your-repo/main/banner.png",
+  "storeImage": [
+    "https://raw.githubusercontent.com/YourName/your-repo/main/banner.png1",
+    "https://raw.githubusercontent.com/YourName/your-repo/main/banner.png2",
+    "https://raw.githubusercontent.com/YourName/your-repo/main/banner.png3",
+  ]
   "categories": ["Utility", "Productivity"],
-  "languages": ["en", "tr"]
+  "languages": [
+    "en",
+    "tr",
+    "de",
+    "fr",
+    "es",
+    "ja",
+    "ru",
+    "ar",
+    "zh",
+    "hi"
+  ]
 }
 ```
 *(Note: You do not need to specify the `version` here. The bot automatically fetches the version number and release notes from your latest GitHub Release!)*
