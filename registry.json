@@ -424,7 +424,7 @@
     "id": "eedali-emoji-picker",
     "name": "Emoji Picker",
     "author": "KoBar Team",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "Quickly search, colorize and copy emojis.",
     "isBeta": true,
     "entry": "index.js",
