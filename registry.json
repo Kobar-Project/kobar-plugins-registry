@@ -348,6 +348,40 @@
     "downloads": 0
   },
   {
+    "id": "snippetvault-plugin",
+    "name": "Snippet Vault",
+    "author": "KoBar",
+    "version": "1.0.2",
+    "description": "Securely store, categorize, and encrypt your frequently used code blocks and text snippets.",
+    "entry": "index.js",
+    "icon": "library_books",
+    "categories": [
+      "Productivity",
+      "Utility"
+    ],
+    "isBeta": false,
+    "githubRepo": "Kobar-Project/SnippetVault-plugin",
+    "languages": [
+      "en",
+      "tr",
+      "de",
+      "es",
+      "fr",
+      "ru",
+      "ar",
+      "zh",
+      "ja",
+      "hi"
+    ],
+    "versionNote": "Updated plugin images.",
+    "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Snippet%20Vault/snippetvault.png",
+    "storeImage": [
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Snippet%20Vault/Snippet-Vault1.png",
+      "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Snippet%20Vault/Snippet-Vault2.png"
+    ],
+    "downloads": 0
+  },
+  {
     "id": "todolist-plugin",
     "name": "To-Do List",
     "author": "KoBar",
