@@ -76,7 +76,7 @@
     "id": "com.kobar.clipboardmanager",
     "name": "Clipboard Manager",
     "author": "KoBar",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Sequential multi-slot clipboard manager for KoBar. Stores your copied items in visual slots and pastes them in order.",
     "entry": "index.js",
     "icon": "content_paste",
@@ -424,10 +424,11 @@
     "id": "eedali-emoji-picker",
     "name": "Emoji Picker",
     "author": "KoBar Team",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Quickly search, colorize and copy emojis.",
     "isBeta": true,
     "entry": "index.js",
+    "icon": "emoji_emotions",
     "image": "https://raw.githubusercontent.com/eedali/EmojiPicker-plugin/main/store_image.png",
     "storeImage": [
       "https://raw.githubusercontent.com/eedali/EmojiPicker-plugin/main/screenshot.png"
