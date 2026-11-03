@@ -26,7 +26,7 @@
       "ja",
       "hi"
     ],
-    "versionNote": "Updated plugin images.",
+    "versionNote": "New design and current models: Claude, OpenAI and Gemini models grouped by provider; OpenAI and Gemini keys can be used. The bar shows when a reply is ready.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/AI%20Hub/aihub.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/AI%20Hub/AI-Hub1.png",
@@ -34,6 +34,13 @@
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/AI%20Hub/AI-Hub3.png"
     ],
     "apiVersion": "1.0.0",
+    "bar": {
+      "tile": {
+        "template": "badge",
+        "sensitive": true
+      },
+      "defaultSize": "icon"
+    },
     "downloads": 0
   },
   {
@@ -62,13 +69,19 @@
       "ja",
       "hi"
     ],
-    "versionNote": "Updated plugin images.",
+    "versionNote": "New design for KoBar 1.5: large display, clearer keys and currency cards; the bar tile shows the last result.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Calculator/calculator.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Calculator/Calculator1.png",
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Calculator/Calculator2.png",
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Calculator/Calculator3.png"
     ],
+    "bar": {
+      "tile": {
+        "template": "value-caption",
+        "sensitive": false
+      }
+    },
     "apiVersion": "1.0.0",
     "downloads": 0
   },
@@ -98,13 +111,19 @@
       "zh",
       "hi"
     ],
-    "versionNote": "Slots now sit as one block between the Copy and Paste buttons: 2/3/4 rows by density in both vertical and horizontal bars, no overlap with other icons. On the new KoBar, rapid back-to-back Ctrl+V presses are no longer skipped; if a paste fails the item is put back.",
+    "versionNote": "New design for KoBar 1.5: clear Copy and Paste mode buttons, a slot list with search, and a bar tile with filled slots (hidden in privacy mode).",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Clipboard%20Manager/clipboardmanager.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Clipboard%20Manager/Clipboard-Manager1.png",
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Clipboard%20Manager/Clipboard-Manager2.png",
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Clipboard%20Manager/Clipboard-Manager3.png"
     ],
+    "bar": {
+      "tile": {
+        "template": "meter",
+        "sensitive": true
+      }
+    },
     "apiVersion": "1.0.0",
     "downloads": 7
   },
@@ -134,13 +153,19 @@
       "ja",
       "hi"
     ],
-    "versionNote": "Updated plugin images.",
+    "versionNote": "New design for KoBar 1.5: pick, copy and edit palette colours; the bar tile shows the last picked colour.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Color%20picker/colorpicker.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Color%20picker/Color-Picker1.png",
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Color%20picker/Color-Picker2.png",
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Color%20picker/Color-Picker3.png"
     ],
+    "bar": {
+      "tile": {
+        "template": "custom",
+        "sensitive": false
+      }
+    },
     "apiVersion": "1.0.0",
     "downloads": 0
   },
@@ -170,7 +195,7 @@
       "ru",
       "tr"
     ],
-    "versionNote": "Panel content is centred and no longer pushed to the right.",
+    "versionNote": "New design for KoBar 1.5: progress ring, 10/25/45/60 min presets, pause and resume; the bar tile shows the remaining time.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Focus%20Mode/focusmode.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Focus%20Mode/Focus-Mode1.png",
@@ -178,6 +203,15 @@
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Focus%20Mode/Focus-Mode3.png"
     ],
     "apiVersion": "1.0.0",
+    "bar": {
+      "tile": {
+        "template": "ring",
+        "sensitive": false,
+        "live": true,
+        "pinnable": true
+      },
+      "defaultSize": "icon"
+    },
     "downloads": 3
   },
   {
@@ -185,7 +219,7 @@
     "name": "KoBox (Dropzone)",
     "author": "KoBar",
     "version": "1.0.2",
-    "description": "An accessible, temporary file dropzone right on your sidebar. Drag files to store, click to open.",
+    "description": "An accessible, temporary file dropzone right on your sidebar. Drag files or folders in to move them into KoBox, click to open.",
     "entry": "index.js",
     "icon": "inventory_2",
     "categories": [
@@ -198,12 +232,18 @@
       "en",
       "tr"
     ],
-    "versionNote": "Updated plugin images.",
+    "versionNote": "New design for KoBar 1.5. Dropped files and folders are moved into KoBox and expired items go to the Recycle Bin.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoBox/KoBox.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoBox/KoBox1.png"
     ],
     "apiVersion": "1.0.0",
+    "bar": {
+      "tile": {
+        "sensitive": false
+      },
+      "defaultSize": "icon"
+    },
     "downloads": 0
   },
   {
@@ -232,7 +272,7 @@
       "ja",
       "hi"
     ],
-    "versionNote": "Optional read-only Google Calendar layer (needs KoBar with Google Calendar (Experimental) enabled).",
+    "versionNote": "New design for KoBar 1.5: month view with the selected day's plan and quick add; the bar tile shows today's date and events.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoCalendar/kocalender.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoCalendar/KoCalendar1.png",
@@ -240,6 +280,15 @@
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoCalendar/KoCalendar3.png"
     ],
     "apiVersion": "1.0.0",
+    "bar": {
+      "tile": {
+        "template": "value-caption",
+        "sensitive": false,
+        "live": false,
+        "pinnable": false
+      },
+      "defaultSize": "icon"
+    },
     "downloads": 4
   },
   {
@@ -267,7 +316,7 @@
       "ja",
       "hi"
     ],
-    "versionNote": "Updated plugin images.",
+    "versionNote": "New design for KoBar 1.5: now playing with the source app, clear controls and a picture-in-picture card; the bar tile shows level bars while playing.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoPlayer/koplayer.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoPlayer/KoPlayer1.png",
@@ -275,6 +324,15 @@
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoPlayer/KoPlayer3.png"
     ],
     "apiVersion": "1.0.0",
+    "bar": {
+      "tile": {
+        "template": "level",
+        "sensitive": true,
+        "live": true,
+        "pinnable": true
+      },
+      "defaultSize": "icon"
+    },
     "downloads": 0
   },
   {
@@ -293,12 +351,18 @@
     "languages": [
       "en"
     ],
-    "versionNote": "Bar icon: no round fill behind the icon, same colour and weight as other bar icons.",
+    "versionNote": "New design for KoBar 1.5: a panel to pick, unpin and style pinned windows; the bar shows when a window is pinned.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Pin%20to%20Top/pinwindowtotop.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Pin%20to%20Top/Pin-to-Top1.png"
     ],
     "apiVersion": "1.0.0",
+    "bar": {
+      "tile": {
+        "sensitive": false
+      },
+      "defaultSize": "icon"
+    },
     "downloads": 4
   },
   {
@@ -314,13 +378,19 @@
       "Utility"
     ],
     "isBeta": false,
-    "versionNote": "Select tool fix: dragging, rotating or resizing now always stops when you release the mouse (even outside the area), objects stay inside the selected area, Esc cancels a drag.",
+    "versionNote": "New design for KoBar 1.5: the toolbar always stays on screen and can be dragged, and you choose PNG or JPG when saving.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/ScreenShot/screenshot.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/ScreenShot/Screenshot1.png",
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/ScreenShot/Screenshot2.png"
     ],
     "apiVersion": "1.0.0",
+    "bar": {
+      "tile": {
+        "sensitive": false
+      },
+      "defaultSize": "icon"
+    },
     "githubRepo": "Kobar-Project/Screenshot-plugin",
     "downloads": 4
   },
@@ -349,13 +419,19 @@
       "ja",
       "ru"
     ],
-    "versionNote": "Updated plugin images.",
+    "versionNote": "New design for KoBar 1.5: shortcut tiles with a visible menu for edit, delete and reorder, a drop area and search.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Shortcuts/shortcuts.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Shortcuts/Shortcuts1.png",
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Shortcuts/Shortcuts2.png"
     ],
     "apiVersion": "1.0.0",
+    "bar": {
+      "tile": {
+        "sensitive": false
+      },
+      "defaultSize": "icon"
+    },
     "downloads": 0
   },
   {
@@ -384,12 +460,18 @@
       "ja",
       "hi"
     ],
-    "versionNote": "Updated plugin images.",
+    "versionNote": "New design for KoBar 1.5: snippet rows with copy and send-to-slot buttons always visible, search, tags and a compact view.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Snippet%20Vault/snippetvault.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Snippet%20Vault/Snippet-Vault1.png",
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Snippet%20Vault/Snippet-Vault2.png"
     ],
+    "bar": {
+      "tile": {
+        "sensitive": true
+      },
+      "defaultSize": "icon"
+    },
     "downloads": 0
   },
   {
@@ -411,12 +493,18 @@
       "tr",
       "de"
     ],
-    "versionNote": "Updated plugin images.",
+    "versionNote": "New design for KoBar 1.5: quick add, All / Open / Done filters and progress; the bar tile shows the number of open tasks.",
     "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/To-Do%20List/todolist.png",
     "storeImage": [
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/To-Do%20List/To-Do-List1.png",
       "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/To-Do%20List/To-Do-List2.png"
     ],
+    "bar": {
+      "tile": {
+        "template": "badge",
+        "sensitive": true
+      }
+    },
     "apiVersion": "1.0.0",
     "downloads": 0
   },
@@ -472,7 +560,14 @@
       "en",
       "tr"
     ],
-    "versionNote": "First release: xterm.js terminal panel with tabs, settings and the KoTerminal bridge.",
+    "versionNote": "New design for KoBar 1.5: redesigned terminal panel and settings; the bar tile shows how many terminals are open.",
+    "bar": {
+      "tile": {
+        "template": "value-caption",
+        "sensitive": false
+      },
+      "defaultSize": "icon"
+    },
     "downloads": 0
   }
 ]
