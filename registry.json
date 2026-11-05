@@ -83,7 +83,7 @@
       }
     },
     "apiVersion": "1.0.0",
-    "downloads": 1
+    "downloads": 2
   },
   {
     "id": "com.kobar.clipboardmanager",
@@ -212,7 +212,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 4
+    "downloads": 5
   },
   {
     "id": "com.kobar.kobox",
@@ -289,7 +289,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 7
+    "downloads": 8
   },
   {
     "id": "koplayer-plugin",
@@ -472,7 +472,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 0
+    "downloads": 1
   },
   {
     "id": "todolist-plugin",
