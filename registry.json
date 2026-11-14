@@ -244,7 +244,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 1
+    "downloads": 2
   },
   {
     "id": "ko-calender-plugin",
@@ -333,7 +333,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 2
+    "downloads": 3
   },
   {
     "id": "pin-window-to-top",
@@ -506,7 +506,7 @@
       }
     },
     "apiVersion": "1.0.0",
-    "downloads": 3
+    "downloads": 4
   },
   {
     "id": "eedali-emoji-picker",
