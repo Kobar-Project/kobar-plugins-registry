@@ -41,7 +41,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 1
+    "downloads": 2
   },
   {
     "id": "com.kobar.calculator.plugin",
@@ -83,7 +83,7 @@
       }
     },
     "apiVersion": "1.0.0",
-    "downloads": 3
+    "downloads": 4
   },
   {
     "id": "com.kobar.clipboardmanager",
@@ -125,7 +125,7 @@
       }
     },
     "apiVersion": "1.0.0",
-    "downloads": 9
+    "downloads": 10
   },
   {
     "id": "kobar-colorpicker-plugin",
@@ -167,7 +167,7 @@
       }
     },
     "apiVersion": "1.0.0",
-    "downloads": 1
+    "downloads": 2
   },
   {
     "id": "focus-mode-plugin",
@@ -212,7 +212,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 5
+    "downloads": 6
   },
   {
     "id": "com.kobar.kobox",
@@ -289,7 +289,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 8
+    "downloads": 9
   },
   {
     "id": "koplayer-plugin",
@@ -363,7 +363,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 6
+    "downloads": 7
   },
   {
     "id": "screenshot-studio-overlay",
@@ -392,7 +392,7 @@
       "defaultSize": "icon"
     },
     "githubRepo": "Kobar-Project/Screenshot-plugin",
-    "downloads": 4
+    "downloads": 5
   },
   {
     "id": "kobar.shortcuts",
@@ -432,7 +432,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 0
+    "downloads": 1
   },
   {
     "id": "snippetvault-plugin",
@@ -472,7 +472,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 1
+    "downloads": 2
   },
   {
     "id": "todolist-plugin",
@@ -506,7 +506,7 @@
       }
     },
     "apiVersion": "1.0.0",
-    "downloads": 4
+    "downloads": 5
   },
   {
     "id": "eedali-emoji-picker",
