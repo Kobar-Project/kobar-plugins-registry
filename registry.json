@@ -289,7 +289,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 9
+    "downloads": 10
   },
   {
     "id": "koplayer-plugin",
@@ -333,7 +333,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 3
+    "downloads": 4
   },
   {
     "id": "pin-window-to-top",
@@ -363,7 +363,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 7
+    "downloads": 8
   },
   {
     "id": "screenshot-studio-overlay",
@@ -506,7 +506,7 @@
       }
     },
     "apiVersion": "1.0.0",
-    "downloads": 5
+    "downloads": 6
   },
   {
     "id": "eedali-emoji-picker",
