@@ -125,7 +125,7 @@
       }
     },
     "apiVersion": "1.0.0",
-    "downloads": 10
+    "downloads": 11
   },
   {
     "id": "kobar-colorpicker-plugin",
@@ -432,7 +432,7 @@
       },
       "defaultSize": "icon"
     },
-    "downloads": 1
+    "downloads": 2
   },
   {
     "id": "snippetvault-plugin",
